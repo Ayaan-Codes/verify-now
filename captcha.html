@@ -8,10 +8,10 @@
 			// ACO Captha Systems © | Powered by ACO Verification ™ | Used for ACO Oauth Signin | All rights reserved to ACO (Ayaan Company)
 
 function ChangeCaptcha() {
-    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz"; 
+    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz%$#@!/"; 
     // You can include special characters by adding them to the string above, for eg: chars += "@#?<>";
     
-    var string_length = 10; // This is the length of the Captcha
+    var string_length = 8; // This is the length of the Captcha
     // ****** CAUTION ****** This just determines the string that'll be produced by the function. To make the Captcha 
     // field compatible with the updated size, you'll have to change the maxlength attribute in the HTML code
 
@@ -43,7 +43,7 @@ function check() { // Function which checks if the entered value is matching the
 	<input type="text" id="randomfield" disabled> <!-- Change this ID to the desired one, be sure to change it in the CSS and JS files too -->
 		<br><br>
 	
-		<input id="CaptchaEnter" size="20" maxlength="6" /> <!-- Change maxlength to the size you wanted your Captcha to be -->
+		<input id="CaptchaEnter" size="20" maxlength="10" /> <!-- Change maxlength to the size you wanted your Captcha to be -->
 	
 		<br><br>
 	
